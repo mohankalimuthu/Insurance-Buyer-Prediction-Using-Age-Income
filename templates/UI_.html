@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>ML Model Deployment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='design.css') }}">
+    </head>
+<body>
+
+    <div class="container">
+        <h2>Insurance Predictor</h2>
+
+        <form method="post">
+            <input type="number" name="age" placeholder="Age" required>
+            <input type="number" name="income" placeholder="Income" required>
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if result %}
+            <h3>{{ result }}</h3>
+        {% endif %}
+    </div>
+
+    <footer>
+        <p>
+            © mohan |
+            📧 <a href="mailto:mohankalimuthu2004@gmail.com">mohankalimuthu2004@gmail.com</a> |
+            🔗 <a href="https://www.linkedin.com/in/mohan-kalimuthu/" target="_blank">
+                linkedin.com/in/mohankalimuthu
+            </a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
